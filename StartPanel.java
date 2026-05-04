@@ -52,6 +52,7 @@ public class StartPanel extends javax.swing.JFrame {
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/start.jpg"))); // NOI18N
         jButton1.setFocusable(false);
+        jButton1.addActionListener(this::jButton1ActionPerformed);
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 220, 60));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.jpg"))); // NOI18N
@@ -61,6 +62,7 @@ public class StartPanel extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(0, 0, 0));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Settings.jpg"))); // NOI18N
         jButton3.setFocusable(false);
+        jButton3.addActionListener(this::jButton3ActionPerformed);
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 220, 60));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/SP_Background.jpg"))); // NOI18N
@@ -81,6 +83,18 @@ public class StartPanel extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Level1 ln = new Level1();
+        ln.setVisible(true);
+        ln.setTitle("LEVEL ONE");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        NewJFrame nf = new NewJFrame();
+        nf.setVisible(true);
+        nf.setTitle("Settings");
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
