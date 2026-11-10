@@ -2,11 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.runnjump;
+package com.mycompany.rnj_startmenu;
 
 /**
  *
- * @author kulle
+ * @author mamdi
  */
 public class RNJ_StartMenu {
 
